@@ -1,0 +1,38 @@
+package main
+
+import "fmt"
+
+type user struct {
+	ID        int
+	firstName string
+	lastName  string
+}
+
+func main() {
+	// d1 := complex(3, 4)
+	// d2 := complex(7, 6)
+
+	// var d3 = d1 + d2
+
+	// fmt.Println(d3)
+
+	// var firstName *string = new(string)
+	// *firstName = "Arthur"
+	// fmt.Println(firstName, *firstName)
+
+	// arr := [3]int{1, 2, 3}
+	// fmt.Println(arr)
+
+	// input := []int{1, 2, 3, 4}
+	// fmt.Println(input)
+
+	var user2 user
+	user2.ID = 2
+	user2.firstName = "tiny"
+	user2.lastName = "tin"
+	fmt.Println(user2)
+
+	user1 := user{ID: 1, firstName: "Kshitij", lastName: "Mudgal"}
+	fmt.Println(user1)
+
+}
