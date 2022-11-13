@@ -1,16 +1,14 @@
 package main
 
 import (
-	"fmt"
+	"net/http"
 
-	"github.com/iamkshitij/pluralsight-go/models"
+	"github.com/iamkshitij/pluralsight-go/controllers"
 )
 
 func main() {
-	u := models.User{
-		ID:        2,
-		FirstName: "Alex",
-		LastName:  "Hales",
-	}
-	fmt.Println(u)
+
+	controllers.RegisterControllers()
+	http.ListenAndServe(":3000", nil)
+
 }
